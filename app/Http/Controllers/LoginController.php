@@ -9,7 +9,7 @@ class LoginController extends Controller
 {
     public function showLoginForm(){
         if(Sentinel::check()){
-            return redirect()->route('home.dashboard');
+            return redirect()->route('inventory.index');
         }else{
             return view('auth.login');
         }
